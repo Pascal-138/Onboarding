@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<h1>Доступные опросы</h1>
+<ul>
+    {% for survey in surveys %}
+        <li><a href="{% url 'survey:survey_detail' survey.id %}">{{ survey.title }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

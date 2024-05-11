@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>{{ survey.title }}</h2>
+  <p>{{ survey.description }}</p>
+
+  <form method="post">
+    {% csrf_token %}
+    <fieldset>
+      <legend>Ответьте на вопросы:</legend>
+      
+      {% for field in form %}
+        <div>
+          <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+          {{ field }}
+          {% if field.errors %}
+            <span style="color: red;">{{ field.errors }}</span>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </fieldset>
+
+    <button type="submit">Отправить</button>
+  </form>
+
+{% endblock %}
