@@ -16,32 +16,32 @@ Test task for AbsolutPOS (NOMIA)
 
 ## Запуск проекта в dev-режиме
 
-- Склонируйте репозиторий
+- Склонируйте репозиторий  
 ```git clone git@github.com:Pascal-163/Onboarding.git```
 
-- Установите и активируйте виртуальное окружение
+- Установите и активируйте виртуальное окружение  
 ```python -m venv venv```
 
 ```source venv/Scripts/activate```
 
-- Установите зависимости
+- Установите зависимости  
 ```pip install -r requirements.txt```
 
-- Создайте и примените миграции
+- Создайте и примените миграции  
 ```python manage.py makemigrations```
 
 ```python manage.py migrate```
 
-- Создайте суперпользователя
+- Создайте суперпользователя  
 ```python manage.py createsuperuser```
 
-- Запустите сервер
+- Запустите сервер  
 ```python manage.py runserver```
 
 Наполните базу данных через панель администратора http://127.0.0.1:8000/admin
 
 
 ## Задание выполнил
-Сидоров Алексей
-Telegram @pascal161
-aleksid92@gmail.com
+Сидоров Алексей  
+Telegram @pascal161  
+aleksid92@gmail.com  
